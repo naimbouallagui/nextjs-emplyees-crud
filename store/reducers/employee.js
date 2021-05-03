@@ -1,4 +1,4 @@
-import { HYDRATE } from "next-redux-wrapper";
+// import { HYDRATE } from "next-redux-wrapper";
 import * as t from "../types";
 
 const initialState = {
@@ -9,8 +9,8 @@ const initialState = {
 
 const mainReducer = (state = initialState, action) => {
 	switch (action.type) {
-		case HYDRATE:
-			return { ...state, ...action.payload };
+		// case HYDRATE:
+		// 	return { ...state, ...action.payload };
 		case t.MODAL_OPEN:
 			return {
 				...state,
